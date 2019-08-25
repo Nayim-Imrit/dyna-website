@@ -3,10 +3,66 @@ html {
     font-size: 100%;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
 body {
-    padding-top: 70px;
+    color: #5d5d5d;
+    line-height: 1.2;
+    font-weight: normal;
+    font-size: 14.25px;
+}
+
+.main-wrapper{
+    width: 94%;
+    margin: 0 auto;
+}
+
+.menu {
+    .site-nav {
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+        padding: .5em;
+        border: .1em solid #1da1f2;
+        border-radius: .5em;
+
+        .nav-link {
+            color: #1da1f2;
+            text-decoration: none;
+            background-color: white;
+            display: block;
+            padding: .5em 1em;
+            border-radius: .5em;
+            border: .1em solid #1da1f2;
+
+            &:hover {
+                color: white;
+                background-color: #1da1f2;
+                cursor: pointer;
+            }
+        }
+
+        .button-login {
+            color: white;
+            background-color: #1da1f2;
+
+            &:hover {
+                color: #1da1f2;
+                background-color: white;
+            }
+        }
+
+        .nav-item+.nav-item {
+            margin-left: 1.5em;
+        }
+
+        .nav-item-rigth {
+            margin-left: auto;
+        }
+    }
+
 }
