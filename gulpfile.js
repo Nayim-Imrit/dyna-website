@@ -35,7 +35,7 @@ function scssTask() {
 function jsTask() {
     return src(files.jsPath)
         .pipe(concat('all.js'))
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(dest('dist'));
 }
 
