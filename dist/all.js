@@ -1,0 +1,1 @@
+console.log("demo-page loaded!"),console.log("reg-page loaded!"),console.log("hello world");
