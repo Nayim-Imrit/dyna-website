@@ -8,7 +8,7 @@ const {
 } = require('gulp');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const postcss = require('gulp-postcss');
 const replace = require('gulp-replace');
